@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Ticket Generator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">  </div>
+            <div class="header">
+                <img src="assets/images/logo-full.svg" alt="Coding Conf Logo">  
+            </div>
+            <div class="content">
+                <h2>Your Journey to Coding Conf <br>2025 Starts Here!</h2>
+                <p>Secure your spot at next year’s biggest coding conference.</p>
+            </div>
+            <form id="ticket-form">
+                <div class="upload-avatar">
+                    <p>Upload Avatar</p>
+                    <div class="upload-box">
+                        <div class="drop-area" id="droparea">
+                            <img src="assets/images/icon-upload.svg" alt="Upload Icon">
+                            <p>Drag and drop or click to upload</p>
+                        </div>
+                    </div>
+                    <small>Upload your photo (JPG or PNG, max size: 500KB).</small>
+                    <p>or <span class="browse">browse</span> to choose a file</p> </div>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Username">Github Username</label>
+                    <input type="text" id="Username" name="Username" required>
+                    <span class="error" id="Username-error"></span>
+                </div>
+                <button type="submit">Generate Ticket</button>
+            </form>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

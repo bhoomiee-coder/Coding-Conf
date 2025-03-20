@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-stretch: 50% 200%;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Inconsolata', monospace; /* Apply Inconsolata to the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #18122B;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+
+.card {
+    position: relative; /* Essential for pseudo-element positioning */
+    overflow: hidden; /* Prevent pseudo-element overflow */
+}
+
+
+.card::before { /* Squiggly line pattern - adjust as needed */
+    content: "";
+    position: absolute;
+    bottom: 0; /* Or adjust vertical position */
+    right: 0; /* Or left: 0; for left side */
+    width: 200px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-image: url("assets/images/pattern-squiggly-line-bottom-desktop.svg");
+    background-repeat: repeat-x; /* Or repeat, repeat-y, no-repeat */
+    background-position: right bottom; /* Adjust position */
+    background-size: auto 100%; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it's above other background elements */
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header img {
+    width: 200px; /* Adjust logo width as needed */
+    padding: 20px 0; /* Consistent padding top/bottom */
+}
+
+
+
+ 
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.upload-avatar {
+    margin: 1rem 0;
+}
+
+.drop-area {
+    border: 2px dashed #ffffff; /* Salmon color */
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drop-area img {
+    width: 30px;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent; /* Slightly lighter background for inputs */
+    color: white;
+}
+
+
+
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+    font-family: 'Inconsolata', sans-serif;
+}
+
+
+.image-counter {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #808080; /* Light gray */
+}
+.ticket {
+    bottom: 0;
+    right: 0;
+    width: 200px; 
+    height: 200px; 
+    background-image: url("assets/images/pattern-squiggly-line-bottom-desktop.svg");
+    background-position: right bottom; /* Align to the right */
+}
+
+button {
+    background-color: #EA5455; /* Salmon color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+.active {
+    background-color: #A9333A; /* Darker salmon for active state */
+}
+
+.next-btn {
+    position: absolute;
+    right: -40px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; /* Make button background transparent */
+    border: none;
+    cursor: pointer;
+}
+
+.next-btn img {
+    width: 20px;
+}
+
